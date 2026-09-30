@@ -1,10 +1,10 @@
-# Name: Soham Mukund Bakshi
 from flask import Flask
+
 app = Flask(__name__)
 
-@app.route("/")
+@app.route('/')
 def home():
-    return "CI/CD Pipeline Version 1 - Developed by Soham Mukund Bakshi"
+    return "CI/CD Pipeline Version 2 - Developed by Soham Mukund Bakshi"
 
-if __name__ == "__main__":
-    app.run("0.0.0.0", 5000)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
